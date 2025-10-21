@@ -23,7 +23,8 @@ public class Program
             Console.WriteLine("1. Adicionar item");
             Console.WriteLine("2. Remover item");
             Console.WriteLine("3. Exibir lista");
-            Console.WriteLine("4. Exportar lista em .txt");
+            Console.WriteLine("4. Completar modificações e exportar lista em .txt");
+            Console.WriteLine("5. Limpar lista.");
             Console.Write("Escolha uma opção: ");
             string choiceUser = Console.ReadLine();
 
@@ -75,6 +76,11 @@ public class Program
                     File.WriteAllLines(filePath, shoopingList);
                     Console.WriteLine("Lista salva. Saindo do programa...");
                     return;
+
+                case "5":
+                    shoopingList.Clear();
+                    Console.WriteLine("Lista limpa."); 
+                break;
 
                 default:
                     Console.WriteLine("Opção inválida. Tente novamente.");
