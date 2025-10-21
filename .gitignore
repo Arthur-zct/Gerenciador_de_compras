@@ -1,0 +1,12 @@
+# Ignore arquivos e pastas do Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.log
+bin/
+obj/
+TestResults/
+*.dbmdl
+*.jfm
+*.pdb
